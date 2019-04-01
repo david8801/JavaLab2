@@ -3,7 +3,8 @@ package ua.lviv.iot.builderShop.model;
 public class Plumbing extends BuilderGoods {
 	
 	
-	public Plumbing() {}
+	public Plumbing() {
+	}
 	
 	public Plumbing(String name, double weight, String material, int height, TypeOfGoods typeOfGoods, int price,
 			String producer, int width, double volume) {

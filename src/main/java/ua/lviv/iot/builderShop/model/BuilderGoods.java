@@ -11,7 +11,8 @@ public class BuilderGoods {
 	private String producer;
 	private int width;
 	
-	public BuilderGoods(){}
+	public BuilderGoods() {
+	}
 	
 	public BuilderGoods(String name, double weight, String material, int height, TypeOfGoods typeOfGoods, int price,
 			String producer, int width) {
@@ -23,13 +24,7 @@ public class BuilderGoods {
 		this.price = price;
 		this.producer = producer;
 		this.width = width;
-	}	
-
-
-
-
-
-	
+	}
 	
 	public double getWeight() {
 		return weight;
@@ -93,7 +88,7 @@ public class BuilderGoods {
 	@Override
 	public String toString() {
 		return "Products' name is " + name + ", it weights " + weight + " kilogramms, it's made of " + material + ", height equals " + height
-				+ " santimeteres, type of goods is " + typeOfGoods + ", it costs " + price + " $, producer is " + producer + ", its' width = " + width +" ";
+				+ " santimeteres, type of goods is " + typeOfGoods + ", it costs " + price + " $, producer is " + producer + ", its' width = " + width + " ";
 	}
 
 

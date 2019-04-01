@@ -14,35 +14,32 @@ public class BuilderShopManager {
 
 	private List<BuilderGoods> builderGoodsList = new ArrayList<>();
 
-	public void toAdd(BuilderGoods builderGoods){
-        builderGoodsList.add (builderGoods);
+	public void toAdd(BuilderGoods builderGoods) {
+        builderGoodsList.add(builderGoods);
     }
-
-    public BuilderShopManager(){
+    public BuilderShopManager() {
     }
-
-    public BuilderShopManager(List<BuilderGoods> builderGoodsList){
+    public BuilderShopManager(List<BuilderGoods> builderGoodsList) {
         this.builderGoodsList = builderGoodsList;
     }
-
     public List<BuilderGoods> searchByType(TypeOfGoods typeOfGoods) {
     	return builderGoodsList.stream().filter(vessel -> vessel.getTypeOfGoods() == typeOfGoods).
     		collect(Collectors.toList());
     }
-
 		public List<BuilderGoods> sortByPrice(boolean ascending) {
         if (ascending) {
             Collections.sort(builderGoodsList, Comparator.comparing(BuilderGoods::getPrice).reversed());
         } else {
             Collections.sort(builderGoodsList, Comparator.comparing(BuilderGoods::getPrice));
-        }return builderGoodsList;
+        }
+        return builderGoodsList;
     }
-	
 	public List<BuilderGoods> sortByWidth(boolean ascending) {
         if (ascending) {
             Collections.sort(builderGoodsList, Comparator.comparing(BuilderGoods::getWidth).reversed());
         } else {
             Collections.sort(builderGoodsList, Comparator.comparing(BuilderGoods::getWidth));
-        }return builderGoodsList;
+        }
+        return builderGoodsList;
     }
 }

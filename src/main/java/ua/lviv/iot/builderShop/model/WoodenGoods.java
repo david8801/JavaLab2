@@ -3,7 +3,8 @@ package ua.lviv.iot.builderShop.model;
 public class WoodenGoods extends BuilderGoods {
 	
 
-	public WoodenGoods() {}
+	public WoodenGoods() {
+	}
 	
 	public WoodenGoods(String name, double weight, String material, int height, TypeOfGoods typeOfGoods, int price,
 					   String producer, int width, Resist waterResist, int length) {
