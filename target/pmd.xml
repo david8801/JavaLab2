@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2019-04-01T22:44:50.734">
+<file name="C:\Users\David\IdeaProjects\JavaMavenLab\src\main\java\ua\lviv\iot\builderShop\test\BuilderGoodsTest.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="49" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.builderShop.test" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.junit.jupiter.api.Assertions'
+</violation>
+</file>
+<file name="C:\Users\David\IdeaProjects\JavaMavenLab\src\main\java\ua\lviv\iot\builderShop\test\BuilderShopTest.java">
+<violation beginline="10" endline="10" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.builderShop.test" class="BuilderShopTest" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'ua.lviv.iot'
+</violation>
+</file>
+</pmd>
