@@ -1,0 +1,12 @@
+name,weight,material,height,typeOfGoods,price,producer,width,waterResist
+Chair,2.4,Wood,Chair,WOODEN_GOODS,50,IKEA,40,WEAK_RESIST
+name,weight,material,height,typeOfGoods,price,producer,width,waterResist
+Table,10.0,Wood,Table,WOODEN_GOODS,100,IKEA,120,STRONG_RESIST
+name,weight,material,height,typeOfGoods,price,producer,width,volume
+Toilet,100.0,ceramic,Toilet,PLUMBING,200,Valve,80,60.0
+name,weight,material,height,typeOfGoods,price,producer,width,volume
+Bath,300.0,ceramic,Bath,PLUMBING,499,MSI,200,120.0
+name,weight,material,height,typeOfGoods,price,producer,width,quantity,lifetime,colorChange
+Lamp,0.1,Glass,Lamp,LIGHTNING,15,HyperX,5,23,MEDIUM_TERM,true
+name,weight,material,height,typeOfGoods,price,producer,width,quantity,lifetime,colorChange
+Lantern,2.0,Glass,Lantern,LIGHTNING,50,Razer,15,10,LONG_TERM,false
