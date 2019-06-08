@@ -1,0 +1,10 @@
+Main.class
+ua\lviv\iot\builderShop\model\Resist.class
+ua\lviv\iot\builderShop\model\Quality.class
+ua\lviv\iot\builderShop\model\TypeOfGoods.class
+ua\lviv\iot\builderShop\model\BuilderGoods.class
+ua\lviv\iot\builderShop\model\Lighting.class
+ua\lviv\iot\App.class
+ua\lviv\iot\builderShop\manager\BuilderShopManager.class
+ua\lviv\iot\builderShop\model\Plumbing.class
+ua\lviv\iot\builderShop\model\WoodenGoods.class
