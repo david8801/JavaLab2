@@ -23,7 +23,7 @@ public class BuilderGoods {
 		this.price = price;
 		this.producer = producer;
 		this.width = width;
-	}	
+	}
 
 
 

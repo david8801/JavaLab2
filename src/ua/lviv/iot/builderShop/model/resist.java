@@ -1,4 +1,4 @@
-	package ua.lviv.iot.builderShop.model;
+package ua.lviv.iot.builderShop.model;
 
 public enum resist {
 	

@@ -6,8 +6,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import ua.lviv.iot.builderShop.manager.Sort;
 import ua.lviv.iot.builderShop.model.BuilderGoods;
 import ua.lviv.iot.builderShop.model.TypeOfGoods;
+import ua.lviv.iot.builderShop.model.Lighting;
+import ua.lviv.iot.builderShop.model.WoodenGoods;
 
 
 public class BuilderShopManager {
@@ -15,7 +18,7 @@ public class BuilderShopManager {
 	private List<BuilderGoods> builderGoodsList = new ArrayList<>();
 
 	public void toAdd(BuilderGoods builderGoods){
-        builderGoodsList.add (builderGoods);
+        builderGoodsList.add(builderGoods);
     }
 
     public BuilderShopManager(){
@@ -26,11 +29,11 @@ public class BuilderShopManager {
     }
 
     public List<BuilderGoods> searchByType(TypeOfGoods typeOfGoods) {
-    	return builderGoodsList.stream().filter(vessel -> vessel.getTypeOfGoods() == typeOfGoods).
-    		collect(Collectors.toList());
+        return builderGoodsList.stream().filter(vessel -> vessel.getTypeOfGoods() == typeOfGoods).
+                collect(Collectors.toList());
     }
 
-		public List<BuilderGoods> sortByPrice(boolean ascending) {
+	public List<BuilderGoods> sortByPrice(boolean ascending) {
         if (ascending) {
             Collections.sort(builderGoodsList, Comparator.comparing(BuilderGoods::getPrice).reversed());
         } else {

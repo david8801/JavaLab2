@@ -1,7 +1,7 @@
 import ua.lviv.iot.builderShop.manager.BuilderShopManager;
 
-
-
+import ua.lviv.iot.builderShop.manager.Sort;
+import ua.lviv.iot.builderShop.model.BuilderGoods;
 import ua.lviv.iot.builderShop.model.Lighting;
 import ua.lviv.iot.builderShop.model.Plumbing;
 import ua.lviv.iot.builderShop.model.quality;
@@ -9,6 +9,8 @@ import ua.lviv.iot.builderShop.model.resist;
 import ua.lviv.iot.builderShop.model.TypeOfGoods;
 import ua.lviv.iot.builderShop.model.WoodenGoods;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
@@ -25,7 +27,8 @@ public class Main {
 		Lighting lamp = new Lighting("Lamp", 0.1, "Glass", 10, TypeOfGoods.LIGHTNING, 15, "HyperX", 5, 23, quality.MEDIUM_TERM, true);
 		
 		Lighting lantern = new Lighting("Lantern", 2, "Glass", 25, TypeOfGoods.LIGHTNING, 50, "Razer", 15, 10, quality.LONG_TERM, false);
-
+		
+		List<BuilderGoods> newBuilderGoodsList = new ArrayList<>();
 		
         manager1.toAdd(chair);
         manager1.toAdd(table);
